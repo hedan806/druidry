@@ -52,9 +52,12 @@ public class Context {
     private Boolean applyLimitPushDown;
     private Boolean forceLimitPushDown;
 
+    private Boolean serializeDateTimeAsLong;
+    private Boolean serializeDateTimeAsLongInner;
+
 
     public Integer getTimeoutInMilliSeconds() {
         return (timeoutInMilliSeconds != null && timeoutInMilliSeconds > 0) ?
-                timeoutInMilliSeconds : null;
+               timeoutInMilliSeconds : null;
     }
 }
